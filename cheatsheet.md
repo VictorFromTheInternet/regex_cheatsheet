@@ -38,7 +38,7 @@
 > regex here
 
 #### Password validation
-> regex here
+> ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$
 Add look ahead here^
 <br>
 <br>
@@ -119,3 +119,17 @@ Notes:
 character |  definition  
 :----------:|:-------------:
 
+<br>
+<br>
+<br>
+
+### Lookaheads
+There are two kinds of lookaheads
+* Positive (?= ...) : input is a pattern that you DO want to be there
+* Negative (?! ...) : input is a pattern that you DON'T want to be there
+
+
+
+<br>
+<br>
+<br>
