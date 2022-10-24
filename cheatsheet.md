@@ -12,13 +12,18 @@ character |  definition
 :----------:|:-------------:
    \w   |  any letter (word) 
    \d   |  any digit
+   \s   | any whitespace
    .    |  any charcter
    
    
 ### Quantifiers
 character |  definition  
 :----------:|:-------------:
-   \*    |  0 or more times (quantifier)
+   \*    |  0 or more times 
+   \+    |  1 or more
+   \?    |  0 or 1 time
+ {min, max}    |  min times, max times
+  { n }  |  n amount of times
    
    
 ### Position
