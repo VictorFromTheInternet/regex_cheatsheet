@@ -1,16 +1,33 @@
+# Table of contents
+* [Resources](#resources--tutorials)
+* [Examples & Most Common](#examples-and-most-common)
+   * [Phone Number matching](#phone-number-matching)
+* [Meta Characters](#meta-characters)
+   * [Resources](#single-characters)
+   * [Quantifiers](#quantifiers)
+   * [Position](#position)
+   * [Character Classes](#character-classes)
+   * [Groups](#groups)
+
+<br>
+<br>
+
 # Resources & tutorials:
 * [The coding train - programming w text](https://youtube.com/playlist?list=PLRqwX-V7Uu6YEypLuls7iidwHMdCM6o2w)
 * [Regex 101 - Testing environment](https://regex101.com/)
 
-# Use cases and Examples
-### Examples
+<br>
+<br>
+
+# Examples and Most Common
 #### Phone Number Matching
-> \\(?\d{3}[-.)]\d{3}[-.]\d{4}
+> \\(?\d{3}[-.)]\s?\d{3}[-.]\d{4}
 > > \\(? ... literal '(' optionally <br>
 > > \d{3} ... 3 digits <br>
-> > [-.) ] ... either a - . ) or blank space <br>
+> > [-.) ] ... either a - . ) <br>
+> > \s? ... blank space optionally
 > > \d{3} ... 3 digits <br>
-> > [-. ] ... either a - . or blank space <br>
+> > [-. ] ... either a - .  <br>
 > > \d{4} ... 4 digits <br>
 > > > (###) ###-#### <br>
 > > > (###)###-#### <br>
@@ -85,6 +102,17 @@ character |  definition
    [ ... ]  | matches a character within the specified class
    [ A-Z ]  | all uppercase letters
    [ a-z ]  | all lowercase letters
+   
+   
 Notes:
    - Ex: user [abc] ... matches ... 'user a' 'user b' 'user c'
    - Ex: 
+
+<br>
+<br>
+<br>
+
+### Groups
+character |  definition  
+:----------:|:-------------:
+
