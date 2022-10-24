@@ -91,9 +91,9 @@ character |  definition
 
 Notes:
 - \b\w{4,6}\b ... matches ... 'word' 'words' 'worlds'
-- ^\d{3}$ ... matches '123' , but NOT 'abc123' or '123abc'
-- ^\d{3} ... matches '123' '123abc', but NOT 'abc123'
-- \d{3}$ ... matches '123' 'abc123', but NOT '123abc'
+- ^\d{3}$ ... matches ... '123'  || NOT 'abc123' '123abc'
+- ^\d{3} ... matches ... '123' '123abc' || NOT 'abc123'
+- \d{3}$ ... matches ... '123' 'abc123' || NOT '123abc'
 
 <br>
 <br>
