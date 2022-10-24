@@ -39,7 +39,7 @@
 
 #### Password validation
 > regex here
-
+Add look ahead here^
 <br>
 <br>
 <br>
